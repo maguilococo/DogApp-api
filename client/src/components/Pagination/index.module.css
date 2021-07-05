@@ -1,0 +1,114 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pagination ul{
+    display: flex;
+    background: rgba(221, 214, 198, .4);
+    padding: 8px;
+    border-radius: 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    font-family: 'Lato', sans-serif;
+    -webkit-box-shadow: 0px 10px 43px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 43px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 43px 0px rgba(0,0,0,0.75);
+}
+
+.pagination ul li {
+    color: #16490D;
+    list-style: none;
+    line-height: 45px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.pagination ul li .numb {
+    list-style: none;
+    height: 45px;
+    width: 45px;
+    margin: 0 3px;
+    line-height: 45px;
+    border-radius: 50%;
+}
+
+.pagination ul li.numb.first{
+    margin: 0px 3px 0 -5px;
+}
+
+.pagination ul li.numb.last{
+    margin: 0px -5px 0 3px;
+}
+
+.pagination ul li .dots {
+    font-size: 1rem;
+    cursor: default;
+}
+
+.pagination ul li .btn {
+    padding: 0 20px;
+    border-radius: 50px;
+}
+
+.next {
+    border-radius: 5px 25px 25px 5px;
+    padding: 0 10px;
+}
+
+.prev {
+    border-radius: 25px 5px 5px 25px;
+    padding: 0 10px;
+}
+
+
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover {
+    background: #16490D;
+    color: whitesmoke;
+}
+
+.pagination ul li .numb:hover, .active {
+    padding: 0 5px;
+    background: #16490D;
+    color: whitesmoke;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .pagination {
+        padding-bottom: 30px;
+    }
+    .pagination ul{
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media only screen and (max-width: 430px) {
+    .pagination {
+        padding-bottom: 50px;
+    }
+
+    .pagination ul{
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pagination ul li {
+        font-size: 0.7rem;
+        flex-wrap: wrap;
+    }
+}

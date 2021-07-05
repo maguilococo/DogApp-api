@@ -1,0 +1,77 @@
+nav {
+  height: 80px;
+  display: flex;
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+  z-index: 10;
+  justify-content: space-between;
+  margin: 1% auto;
+  background-color: aquamarine;
+  width: 100%;
+}
+
+.link {
+  font-family: 'Lato', sans-serif;
+  color: #1C3C17;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: none;
+  height: 100%;
+  margin: 0 2%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: blue;
+}
+.active {
+  color: #854016;
+  text-decoration: underline;
+}
+
+.menu {
+  width: 60%;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logoSide{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 30%;
+  background-color: pink;
+}
+
+.logo {
+  height: 80%;
+  width: 80%;
+}
+
+.mobileMenu{
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .mobileMenu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #1C3C17;
+  }
+  .logo {
+    height: 70%;
+    width: 70%;
+  }
+  .logoSide{
+    margin-left: -100px;
+  }
+}

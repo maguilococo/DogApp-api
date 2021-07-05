@@ -1,0 +1,83 @@
+.tagsInput {
+    display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	min-height: 40px;
+	width: 400px;
+	padding: 0 6px;
+	border: 1px solid rgb(199, 199, 199);
+	border-radius: 20px;
+    background-color: #fff;
+    /* background-color: rgba(255, 255, 255, .7); */
+}
+.tagsInput:focus-within {
+		border: 3px solid 16490D;
+}
+
+.tagsInput input {
+    flex: 1;
+    border-radius: 10px;
+    border: none;
+    height: 38px;
+    font-size: 1rem;
+    padding: 3px 0 0 7px;
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+}
+.tagsInput input:focus {
+    outline: transparent;
+}
+
+#tags {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 8px 0 0 0;
+}
+
+.tag {
+	display: flex;
+	width: auto;
+	height: 30px;
+	margin: 0 8px 8px 0;
+	padding: 0 8px;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	font-size: 1rem;
+	color: #fff;
+	background: #1C3C17;
+    border: 2px solid #1C3C17;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tag .tagTitle {
+    margin-top: 3px;
+}
+.tag .tagClose {
+    display: block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-left: 8px;
+    color: #16490D;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 567px) {
+    .tagsInput {
+        width: 250px;
+        flex-wrap: wrap;
+    }
+    .tagsInput input {
+        font-size: 0.8rem;
+    }
+    .tag {
+        font-size: 0.8rem;
+    }
+}

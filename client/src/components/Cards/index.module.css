@@ -1,0 +1,37 @@
+.main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.main .gallery{
+    position: relative;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding: 45px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto; /* for 4 rows*/
+    grid-gap: 4vh;
+    grid-auto-flow: dense;
+}
+
+@media only screen and (max-width: 1130px) {
+    .main .gallery {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main .gallery {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .main .gallery {
+        display: block;
+    }
+}
