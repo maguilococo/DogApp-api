@@ -23,7 +23,7 @@ server.use((req, res, next) => {
   next();
 });
 
-server.use('/dogapp_api', routes);
+server.use('/dogapp', routes);
 
 // Error catching endware.
 server.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
