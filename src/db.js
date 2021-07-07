@@ -2,7 +2,7 @@ require('dotenv').config();
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
-const { DOGAPP_DB_USER, DOGAPP_DB_PASSWORD, DOGAPP_DB_HOST, DOGAPP_DB_NAME } = process.env;
+const { DOGAPP_DB_USER, DOGAPP_DB_PASSWORD, DOGAPP_DB_HOST, DOGAPP_DB_NAME } = process.env.PORT;
 
 const sequelize = new Sequelize(`postgres://${ DOGAPP_DB_USER}:${DOGAPP_DB_PASSWORD}@${DOGAPP_DB_HOST}/${DOGAPP_DB_NAME}`, {
   logging: false, // set to console.log to see the raw SQL queries
