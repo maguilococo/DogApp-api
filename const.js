@@ -1,6 +1,6 @@
 // Constants used in the backend
 
-const { DOGAPP_apiKey } = process.env;
+const { DOGAPP_apiKey } = process.env.PORT;
 
 const BASE_URL = 'https://api.thedogapi.com/v1/breeds';
 const DOGS_URL = '/search?q=';
